@@ -29,11 +29,11 @@ function createPets(pet) {
     const petData = fs.readFileSync('../pets.json');
     let pets = parseData(petData)
     pets.push(pet)
-   fs.writeFileSync('../pets.json', JSON.stringify(pets))
+    fs.writeFileSync('../pets.json', JSON.stringify(pets))
     // console.log(pets)
     // console.log("updated object")
 }
-createPets()
+
 function parseData(data) {
     return JSON.parse(data)
 }
