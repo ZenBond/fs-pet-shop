@@ -1,1 +1,1 @@
-[{ "age": 7, "kind": "rainbow", "name": "fido" }, { "age": 5, "kind": "snake", "name": "Buttons" }]
+[{"age":7,"kind":"dog","name":"fido"},{"age":"1","kind":"cat","name":"Bob"},{"age":"blue","kind":"cat","name":"jim"},{"age":"3","kind":"elephant","name":"jill"},{"age":"10","kind":"dog","name":"luke"},{"age":"10","kind":"dog"},{"age":"red","kind":"dog"},{"age":"red","kind":"dog","name":"luke"},{"age":"3"}]
