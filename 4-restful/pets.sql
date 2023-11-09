@@ -1,0 +1,5 @@
+INSERT INTO pets (age, kind, name) VALUES('5', 'tiger', 'pat')
+INSERT INTO pets (age, kind, name) VALUES('2', 'bear', 'gary')
+INSERT INTO pets (age, kind, name) VALUES('8', 'iguana', 'bo')
+INSERT INTO pets (age, kind, name) VALUES('10', 'cat', 'smith')
+INSERT INTO pets (age, kind, name) VALUES('11', 'lion', 'roger')

@@ -7,7 +7,12 @@ const petsPath = '../pets.json'
 app.use(express.json());
 
 
+
+
 app.get('/pets', (req, res) => {
+    if (!petsPath) {
+        res.status(404).send('Not Found')
+    }
     fs.readFile(petsPath, 'utf8', (error, data) => {
         if (error) {
             console.error(error.stack);
@@ -19,6 +24,7 @@ app.get('/pets', (req, res) => {
 })
 
 app.get('/pets/:id', (req,res) => {
+    
     fs.readFile(petsPath, 'utf8', (error, data) => {
         const id = Number.parseInt(req.params.id);
         if (error) {
@@ -93,11 +99,9 @@ app.delete('/pets/:id', (req, res) => {
 
 
 
-
-
-
-
-
+app.use((req, res) => {
+    res.sendStatus(404);
+})
 
 
 
